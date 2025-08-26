@@ -1,25 +1,26 @@
-def iniciar_menu
+def iniciar_menu(produtos = [])
 
   loop do
-    puts "Escolha uma das opções abaixo:"
-    puts "1 - Cadastro de produtos"
-    puts "2 - Lista de produtos"
-    puts "3 - Retirar do estoque"
-    puts "4 - Sair"
+    mensagem_amarelo( "======== Escolha uma das opções abaixo: ========", false, false)
+    mensagem_azul("#{vermelho("1")} - Cadastro de produtos", false, false)
+    mensagem_azul("#{vermelho("2")} - Lista de produtos", false, false)
+    mensagem_azul("#{vermelho("3")} - Retirar do estoque", false, false)
+    mensagem_azul("#{vermelho("4")} - Sair", false, false)
 
     opcao = gets.to_i
 
     case opcao
     when 1
-      puts "Cadastro de produtos"
+      cadastro_produto(produtos)
     when 2
-      puts "Lista de produtos"
+      mensagem "Lista de produtos"
     when 3
-      puts "Retirar do estoque"
+      mensagem "Retirar do estoque"
     when 4
+      limpar_tela
       exit
     else
-      puts "Opção inválida. Tente novamente."
+      mensagem "Opção inválida. Tente novamente."
     end
 
   end
