@@ -2,6 +2,7 @@ require_relative 'display/menu'
 require_relative 'display/operacoes_de_tela'
 require_relative 'core/cadastrar_produto'
 require_relative 'core/listar_produtos'
+require_relative 'core/retirar_estoque'
 
 produtos = [
   { id: Time.now.to_i, nome: "Sony PlayStation3", descricao: "PS3 - 250gb", preco: 699.00, quantidade: 74 },
