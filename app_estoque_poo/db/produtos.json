@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nome": "Playstation 5",
+    "descricao": "Sony Playstation 5",
+    "preco": 4999.99,
+    "quantidade": 89
+  },
+  {
+    "id": 2,
+    "nome": "Xbox Series X",
+    "descricao": "Microsoft Xbox Series X",
+    "preco": 4599.99,
+    "quantidade": 1120
+  },
+  {
+    "id": 3,
+    "nome": "Switch 2",
+    "descricao": "Nintendo Switch 2",
+    "preco": 2999.99,
+    "quantidade": 3216
+  }
+]
